@@ -4,14 +4,14 @@ URL Shortner
 {% endblock title %}
 {% block container %}
  <div class="page-header">
-          <h1>URL Shortener</h1>
+          <h1>Opensooq URL Shortener</h1>
         </div>
 <div class="container">
 <form action="/" class="form-horizontal" method="POST">
     <fieldset>
         {{ form }}
         <div class="form-group">
-        <label for="longUrl">Login Url</label>
+        <label for="longUrl">Url</label>
         <input required="true" type="text" class="form-control" id="longUrl" name="longUrl" maxlength="1024" placeholder="https://www.example.com">
         </div>
         <button type="submit" class="btn btn-primary btn-space">Submit</button>
