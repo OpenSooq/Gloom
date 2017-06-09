@@ -8,6 +8,23 @@ Gloom allows you to shorten URLs just as you would on your domain. Users can cre
 
 Put your url then submit, you will see the shortner url.
 
+or they can programatically create them through the URL Shortener API. With the URL Shortener API you can write applications that use simple HTTP methods to create short links from desktop, mobile, or web.
+
+```
+API : /shorten
+Method : POST
+Params : longURL
+```
+Resposnse :
+
+```javascript
+{ 
+  shorten: "XXX",
+  link : "XXXXXXX"
+}
+```
+-------------------------------------------------------------------------------------
+
 Links that users create through the URL Shortener can also open directly in your mobile applications that can handle those links. This automatic behavior provides the best possible experience to your app users who open your domain links, no matter what platform or device they are on.
 
 This application was done using [BottlePy](https://github.com/bottlepy/bottle) and [uPyApp](https://github.com/muayyad-alsadi/uPyApp)
@@ -44,21 +61,5 @@ cp example/uwsgi-dev.ini ./uwsgi.ini
 ./cli migrate
 ```
 
-## API Doc
 
-Users can create these short links through the web interface or they can programatically create them through the URL Shortener API. With the URL Shortener API you can write applications that use simple HTTP methods to create short links from desktop, mobile, or web.
-
-```
-API : /shorten
-Method : POST
-Params : longURL
-```
-Resposnse :
-
-```javascript
-{ 
-  shorten: "XXX",
-  link : "XXXXXXX"
-}
-```
 
