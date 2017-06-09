@@ -10,12 +10,14 @@ Put your url then submit, you will see the shortner url.
 
 or they can programatically create them through the URL Shortener API. With the URL Shortener API you can write applications that use simple HTTP methods to create short links from desktop, mobile, or web.
 
+For instance, you could issue the following curl command (POST request):
+
 ```
-API : /shorten
-Method : POST
-Params : longURL
+curl https://YourDomain/shorten \
+  -H 'Content-Type: application/json' \
+  -d '{"longUrl": "http://www.google.com/"}'
 ```
-Resposnse :
+If successful, the response will look like:
 
 ```javascript
 { 
@@ -27,7 +29,7 @@ Resposnse :
 
 Links that users create through the URL Shortener can also open directly in your mobile applications that can handle those links. This automatic behavior provides the best possible experience to your app users who open your domain links, no matter what platform or device they are on.
 
-This project running by [Python](https://www.python.org/) with [MongoDB](https://www.mongodb.com/) as a backend and was done using [BottlePy](https://github.com/bottlepy/bottle) and [uPyApp](https://github.com/muayyad-alsadi/uPyApp)
+This project running by [Python](https://www.python.org/) with [MongoDB](https://www.mongodb.com/) as a backend and done using [BottlePy](https://github.com/bottlepy/bottle) and [uPyApp](https://github.com/muayyad-alsadi/uPyApp)
 
 ## Installation
 
