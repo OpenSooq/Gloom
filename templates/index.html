@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+URL Shortner
+{% endblock title %}
+{% block container %}
+ <div class="page-header">
+          <h1>URL Shortener</h1>
+        </div>
+<div class="container">
+<form action="/" class="form-horizontal" method="POST">
+    <fieldset>
+        {{ form }}
+        <div class="form-group">
+        <label for="longUrl">Login Url</label>
+        <input required="true" type="text" class="form-control" id="longUrl" name="longUrl" maxlength="1024" placeholder="https://www.example.com">
+        </div>
+        <button type="submit" class="btn btn-primary btn-space">Submit</button>
+    </fieldset>
+</form>
+</div>
+{% if messages %}
+    {% for message in messages %}
+        {{ message|safe }}
+    {% endfor %}
+{% endif %}
+
+<hr/>
+{% if item %}
+<strong>short: </strong><a class="shortLink" href="{{item.short}}" target="_blank" >{{item.short}}</a>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target=".shortLink">Copy</button>
+<br/>
+<br/>
+<strong>url: </strong><a href="{{item.url}}" target="_blank">{{item.url}}</a>
+<br/>
+<br/>
+<strong>clicks: </strong> {{item.clicks}}<br/>
+<br/>
+<strong>last click: </strong>{{item.updated_at|datetime}}
+<br/>
+{% endif %}
+
+{% endblock container %}

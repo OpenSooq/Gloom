@@ -1,0 +1,11 @@
+bottle
+python-memcached
+redis
+# for nginx config
+jinja2
+requests
+# requests[security]
+pyopenssl
+ndg-httpsclient
+pyasn1
+

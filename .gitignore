@@ -1,0 +1,8 @@
+*~
+*.py?
+/app.ini
+/uwsgi.ini
+/virtualenv/
+/venv/
+/.vscode/
+

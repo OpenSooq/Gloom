@@ -1,0 +1,17 @@
+python-pip
+python-wheel
+python-virtualenv
+python-sqlalchemy
+python-markupsafe
+python-simplejson
+uwsgi
+uwsgi-plugin-python
+uwsgi-logger-file
+uwsgi-logger-systemd
+MySQL-python
+#
+pyOpenSSL
+python-ndg_httpsclient
+python-pyasn1-modules
+python-pyasn1
+
