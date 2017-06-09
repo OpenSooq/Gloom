@@ -10,6 +10,13 @@ Put your url then submit, you will see the shortner url.
 
 or they can programatically create them through the URL Shortener API. With the URL Shortener API you can write applications that use simple HTTP methods to create short links from desktop, mobile, or web.
 
+## API Doc
+```
+API : /shorten
+Method : POST
+Params : longURL
+```
+
 For instance, you could issue the following curl command (POST request):
 
 ```
