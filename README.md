@@ -44,4 +44,21 @@ cp example/uwsgi-dev.ini ./uwsgi.ini
 ./cli migrate
 ```
 
+## API Doc
+
+Users can create these short links through the web interface or they can programatically create them through the URL Shortener API. With the URL Shortener API you can write applications that use simple HTTP methods to create short links from desktop, mobile, or web.
+
+```
+API : /shorten
+Method : POST
+Params : longURL
+```
+Resposnse :
+
+```javascript
+{ 
+  shorten: "XXX",
+  link : "XXXXXXX"
+}
+```
 
