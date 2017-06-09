@@ -14,7 +14,8 @@ This application was done using [BottlePy](https://github.com/bottlepy/bottle) a
 
 ## Installation
 
-You need `pymongo3`
+1. You need a domian to use it for shorting URL
+2. You need `pymongo3`
 
 ```
 virtualenv --system-site-packages virtualenv
