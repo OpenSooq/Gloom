@@ -27,11 +27,9 @@ Resposnse :
 
 Links that users create through the URL Shortener can also open directly in your mobile applications that can handle those links. This automatic behavior provides the best possible experience to your app users who open your domain links, no matter what platform or device they are on.
 
-This application was done using [BottlePy](https://github.com/bottlepy/bottle) and [uPyApp](https://github.com/muayyad-alsadi/uPyApp)
+This project running by [Python](https://www.python.org/) with [MongoDB](https://www.mongodb.com/) as a backend and was done using [BottlePy](https://github.com/bottlepy/bottle) and [uPyApp](https://github.com/muayyad-alsadi/uPyApp)
 
 ## Installation
-
-This project running by Python with MongoDB as a backend
 
 1. You need a domian to use it for shorting URL
 2. Install MongoDB
