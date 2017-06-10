@@ -1,0 +1,6 @@
+[template]
+src = "uwsgi.ini.tmpl"
+dest = "/app/code/uwsgi.ini"
+owner = "app"
+mode = "0644"
+keys = ["/gloom/"]

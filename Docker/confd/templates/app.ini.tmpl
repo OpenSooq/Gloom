@@ -1,0 +1,13 @@
+[main]
+debug-level=debug
+base-url={{getv "/gloom/app/domain"}}
+secret={{getv "/gloom/app/secret"}}
+
+[db]
+connection = {{getv "/gloom/mysql/url"}}
+
+[mongo]
+connection={{getv "/gloom/mongo/url"}}
+database = {{getv "/gloom/mongo/db"}}
+collection = {{getv "/gloom/mongo/collection"}}
+
