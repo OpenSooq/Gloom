@@ -1,0 +1,6 @@
+[template]
+src = "app.ini.tmpl"
+dest = "/app/code/app.ini"
+owner = "app"
+mode = "0644"
+keys = ["/gloom/"]
