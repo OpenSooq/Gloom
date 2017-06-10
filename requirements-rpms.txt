@@ -4,6 +4,7 @@ python-virtualenv
 python-sqlalchemy
 python-markupsafe
 python-simplejson
+python-pymongo
 uwsgi
 uwsgi-plugin-python
 uwsgi-logger-file
