@@ -1,6 +1,6 @@
 # <p align="center">Gloom - Opensooq URL shortener</p>
 
-![Goom]<p align="center">(/public/assets/images/gloom.png)</p>
+![Goom](/public/assets/images/gloom.png)
 
 Gloom allows you to shorten URLs just as you would on your domain. Users can create these short links through the web interface For example, to shorten the URL http://www.google.com/, access UI admin:
 
