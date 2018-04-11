@@ -1,0 +1,359 @@
+*, *:before, *:after{transition: all 0.4s ease-in-out}
+
+body{
+	background: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	overflow-x: hidden
+}
+
+p{line-height: 1.6em}
+
+button{cursor: pointer}
+
+h2{text-transform: uppercase}
+
+.relative{position: relative}
+/* start col */
+#shortenBlock .col-md-2, #shortenBlock .col-md-4, #shortenBlock .col-md-6, #shortenBlock .col-md-3, #shortenBlock .col-md-5{
+	padding: 0;
+	margin: 0
+}
+/* end col */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{background-color: #fff !important}
+/* start element */
+.element{position: relative}
+/* end element */
+
+/* start preloader */
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: none repeat scroll 0 0 #fff
+}
+
+.sk-spinner-three-bounce.sk-spinner{
+	width: 70px;
+	text-align: center
+}
+
+.sk-spinner-three-bounce div{
+	width: 18px;
+	height: 18px;
+	background-color: #7AD03A;
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-threeBounceDelay 1.4s infinite ease-in-out;
+	animation: sk-threeBounceDelay 1.4s infinite ease-in-out;
+	/* Prevent first frame from flickering when animation starts */
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+
+.sk-spinner-three-bounce .sk-bounce1{
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s
+}
+
+.sk-spinner-three-bounce .sk-bounce2{
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s 
+}
+
+@-webkit-keyframes sk-threeBounceDelay{
+	0%, 80%, 100%{
+		-webkit-transform: scale(0);
+		transform: scale(0)
+	}
+	40%{
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes sk-threeBounceDelay {
+	0%, 80%, 100% {
+		-webkit-transform: scale(0);
+		transform: scale(0)
+	}
+	40% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+/* end preloader */
+
+/* start shortenBlock */
+#shortenBlock{
+	color: #ffffff;
+	text-align: center;
+	padding: 90px 0 0;
+	background: linear-gradient(270deg, #874da2, #c43a30);
+	background-size: 400% 400%;
+	animation: AnimationName 7s ease infinite
+}
+
+@keyframes AnimationName { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+#shortenBlock h1{
+	font-size: 80px;
+	font-weight: 700
+}
+
+#shortenBlock h1 img,#shortenBlock h1 span{
+	display: inline-block;
+	vertical-align: middle
+}
+
+#shortenBlock h1 img.squeeze{
+	will-change: transform;
+	animation: AnimationLogo 2s ease-in-out infinite;
+	position: relative;
+	transform: translate3d(-100%, 0, 0);
+	top:0
+}
+
+@keyframes AnimationLogo{ 
+	0%{
+		top:0;
+		transform: skewX(45deg);
+		transform: scale(1, 1)
+	}
+	50%{
+		top:3px;
+		transform: skewX(45deg);
+		transform: scale(1, 0.95)
+	}
+	100%{
+		top:0;
+		transform: skewX(45deg);
+		transform: scale(1, 1)
+	}
+}
+
+#shortenBlock h2{
+	font-weight: 300;
+	font-size: 18px
+}
+
+#shortenBlock small{
+	font-size: 80px;
+	color: #000;
+	font-weight: bold
+}
+
+#shortenBlock form{
+	border-bottom: solid 1px #ddd;
+	margin-top: 50px
+}
+
+#shortenBlock form div[class^="col-md"]{
+	background-color: #fff;
+	margin-top: 40px;
+	min-height: 65px
+}
+
+#shortenBlock .form-control{
+	width:100%;
+	border: none;
+	border-radius: 0px;
+	box-shadow: none;
+	height: 65px;
+}
+
+#shortenBlock button.form-control{
+	color: #8e8e8e;
+	width: auto;
+	display: inline-block;
+	margin: 0 0 0 35px;
+	padding: 0
+}
+
+#shortenBlock .form-control.gloomBtn:hover{color: #7ca91e}
+
+#shortenBlock .form-control.searchBtn:hover{color: #46769a}
+
+#shortenBlock button.form-control span:first-child {
+	margin-right: 4px;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle
+}
+
+
+#shortenedUrl .shortened-new-url{
+	color: #666;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 15px 0;
+	display: inline-block;
+	vertical-align: middle
+}
+
+#shortenedUrl .form-copy{
+	background-color: transparent;
+	vertical-align: middle;
+	display: inline-block;
+	color: #367bb8;
+	margin-left: 15px;
+	border-color: #367bb8
+}
+
+#shortenedUrl .form-copy:hover{background-color: #eff7ff}
+
+#shortenedUrl .shortenDetails a, #shortenedUrl .shortenDetails span{
+	font-size: 16px;
+	font-weight: bold
+}
+
+
+/* start features */
+#statistics{
+	box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+	padding-top: 40px;
+	padding-bottom: 100px
+}
+
+#statistics .icon{
+	display: block;
+	margin: auto;
+	color: #5892bf;
+	font-size: 30px;
+	width: 60px;
+	height: 60px;
+	margin-bottom: 15px;
+	border: solid 1px #5892bf;
+	border-radius: 100%;
+	line-height: 60px
+}
+
+#statistics h4
+{
+	color: #000;
+	font-weight: bold;
+	padding-top: 10px
+}
+
+.title h2{
+	color: #7AD03A;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	padding-bottom: 60px
+}
+
+#statistics .totalClicks, #statistics .topClicks{
+	font-size: 32px;
+	display: block
+}
+
+#statistics .topClicks{
+	color: #5792bf;
+	font-size: 25px
+}
+
+#statistics .col-md-3{margin-bottom: 20px}
+/* end features */
+
+/* charts */
+
+.charts {
+	padding-top: 40px;
+	margin-top: 40px;
+	border-top: solid 1px #f1f1f1
+}
+
+.clicksBy{
+	display: block;
+	font-size: 20px;
+	color: #7AD03A;
+	font-weight: bold;
+	margin-bottom: 20px
+}
+
+/* end of charts */
+
+/* start footer */
+footer{
+	background-color: #fff;
+	padding: 20px 0 20px 0;
+	margin-top: 7px
+}
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:0;
+	width:100%
+}
+
+footer p{
+	font-weight: 400;
+	margin-bottom: 0;
+	padding-bottom: 0
+}
+
+.copyright{font-size: 11px}
+/* end footer */
+
+/* start social icon */
+.social_icon{
+	padding: 0;
+	margin: 0
+}
+.social_icon li{
+	display: inline-block;
+	list-style: none;
+	position: relative
+}
+
+.social_icon li a{
+	border-radius: 100%;
+	color: #404040;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.4s ease-in-out
+}
+
+.social_icon li a:hover{background: #7AD03A}
+/* end social icon */
+
+@media only screen and (max-width: 767px){
+	.emptyDiv{display: none}
+	#shortenBlock button.form-control{
+		width:49%;
+		padding: 0
+	}
+	#shortenBlock{padding: 40px 0 0}
+	#shortenBlock form div[class^="col-md"]{margin-top: 0}
+	#shortenBlock h1, #shortenBlock small{font-size: 60px}
+	#shortenBlock h2{font-size: 13px}
+	#shortenBlock{min-height: auto}
+}
