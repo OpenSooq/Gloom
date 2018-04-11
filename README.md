@@ -6,6 +6,8 @@ Gloom allows you to shorten URLs just as you would on your domain. Users can cre
 
 <img width="452" alt="Admin" src="https://user-images.githubusercontent.com/4533327/26978058-b275883c-4d32-11e7-8325-a9ac740df428.png">
 
+![Goom](/public/new-skin.png)
+
 Put your url then submit, you will see the shortner url.
 
 or they can programatically create them through the Gloom API. With the Gloom API you can write applications that use simple HTTP methods to create short links from desktop, mobile, or web.
