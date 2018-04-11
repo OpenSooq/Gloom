@@ -2,6 +2,8 @@
 
 <p align="center"><img alt="Admin" src="https://opensooqui2.os-cdn.com/gloom.png"></p>
 
+<p align="center"><img alt="Admin" src="https://opensooqui2.os-cdn.com/gloom-moving.gif"></p>
+
 Gloom allows you to shorten URLs just as you would on your domain. Users can create these short links through the web interface For example, to shorten the URL http://www.google.com/, access UI admin:
 
 ![Goom](/public/new-skin.png)
