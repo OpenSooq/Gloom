@@ -349,6 +349,7 @@ footer p{
 	.emptyDiv{display: none}
 	#shortenBlock button.form-control{
 		width:49%;
+		margin: 0;
 		padding: 0
 	}
 	#shortenBlock{padding: 40px 0 0}
@@ -356,4 +357,5 @@ footer p{
 	#shortenBlock h1, #shortenBlock small{font-size: 60px}
 	#shortenBlock h2{font-size: 13px}
 	#shortenBlock{min-height: auto}
+	footer.fixed{position:static}
 }
