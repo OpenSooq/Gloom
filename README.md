@@ -1,4 +1,4 @@
-# Gloom - Opensooq URL shortener
+# <center>Gloom - Opensooq URL shortener</center>
 
 ![Goom](/public/assets/images/gloom.png)
 
